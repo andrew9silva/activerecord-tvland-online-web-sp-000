@@ -4,8 +4,6 @@ class CreateCharacter < ActiveRecord::Migration[5.1]
 
     create_table :characters do |x|
       x.string :name
-      x.string :last_name
-      x.integer :actor_id
       x.integer :show_id
     end
   end
