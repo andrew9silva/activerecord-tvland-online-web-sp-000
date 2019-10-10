@@ -9,7 +9,6 @@ class Show < ActiveRecord::Base
     self.characters.collect do |x|
       x.full_name
     end
-
   end
 
 end
