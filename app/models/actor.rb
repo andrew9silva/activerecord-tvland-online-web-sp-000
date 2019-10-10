@@ -13,6 +13,7 @@ class Actor < ActiveRecord::Base
     shows = self.shows.map { |x| x.name }
     role = characters.con_cat shows
     roles << role.join(" - ")
+    roles
   end
 
 end
