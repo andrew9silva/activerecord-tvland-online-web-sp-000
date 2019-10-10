@@ -6,10 +6,10 @@ class Show < ActiveRecord::Base
 
   def actors_list
     binding.pry
-    list = self.all.each do |x|
-      x.character
+    self.characters.collect do |x|
+      x.full_name
     end
-    list.actor.full_name
+    
   end
 
 end
