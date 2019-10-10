@@ -8,6 +8,8 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
+    roles = []
+    characters = self.characters.map {|x| x.name}
   end
 
 end
