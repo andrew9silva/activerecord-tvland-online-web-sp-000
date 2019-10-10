@@ -5,6 +5,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
+    binding.pry
     list = self.all.each do |x|
       x.character
     end
