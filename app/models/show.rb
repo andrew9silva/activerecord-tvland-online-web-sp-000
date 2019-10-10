@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
 
   def actors_list
 
-    self.characters.collect do |x|
+    self.actors.collect do |x|
       x.full_name
     end
   end
