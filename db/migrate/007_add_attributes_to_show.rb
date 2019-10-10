@@ -1,4 +1,4 @@
-class AddAttributeToShow < ActiveRecord::Migration[5.1]
+class AddAttributesToShow < ActiveRecord::Migration[5.1]
 
   def change
 
