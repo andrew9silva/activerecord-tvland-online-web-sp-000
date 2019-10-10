@@ -1,6 +1,6 @@
 class AddCatchphraseToCharacter < ActiveRecord::Migration[5.1]
 
-  def say_that_thing_you_say
+  def change
     add_column :characters, :catchphrase, :string
   end
 end
