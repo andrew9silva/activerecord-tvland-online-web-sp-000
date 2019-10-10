@@ -11,7 +11,7 @@ class Actor < ActiveRecord::Base
     roles = []
     characters = self.characters.map { |x| x.name }
     shows = self.shows.map { |x| x.name }
-    role = characters.con_cat shows
+    role = characters.concat shows
     roles << role.join(" - ")
     roles
   end
